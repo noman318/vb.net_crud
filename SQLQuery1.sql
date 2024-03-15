@@ -1,0 +1,1 @@
+﻿alter table product add product_no int constraint not null;
