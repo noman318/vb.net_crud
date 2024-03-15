@@ -71,14 +71,6 @@ Public Class Form1
             While dr.Read
                 DataGridView1.Rows.Add(dr.Item("product_no"), dr.Item("product_name"), dr.Item("product_price"), dr.Item("product_group"), dr.Item("product_expiry"), Format(CBool(dr.Item("product_status"))))
             End While
-            ' cmd = conn.CreateCommand()
-            ' cmd.CommandType = CommandType.Text
-            'cmd.CommandText = "SELECT * FROM product"
-            'cmd.ExecuteNonQuery()
-            'Dim dt As New DataTable()
-            'Dim da As New SqlDataAdapter(cmd)
-            'da.Fill(dt)
-            'DataGridView1.DataSource = dt
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -179,14 +171,6 @@ Public Class Form1
             While dr.Read
                 DataGridView1.Rows.Add(dr.Item("product_no"), dr.Item("product_name"), dr.Item("product_price"), dr.Item("product_group"), dr.Item("product_expiry"), Format(CBool(dr.Item("product_status"))))
             End While
-            ' cmd = conn.CreateCommand()
-            ' cmd.CommandType = CommandType.Text
-            'cmd.CommandText = "SELECT * FROM product"
-            'cmd.ExecuteNonQuery()
-            'Dim dt As New DataTable()
-            'Dim da As New SqlDataAdapter(cmd)
-            'da.Fill(dt)
-            'DataGridView1.DataSource = dt
 
         Catch ex As Exception
             MsgBox(ex.Message)
