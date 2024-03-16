@@ -114,7 +114,7 @@ Public Class Form1
         clear()
     End Sub
     Public Sub delete()
-        If MsgBox("Are u sure u want to Deletd", MsgBoxStyle.Question + vbYesNo) = vbYes Then
+        If MsgBox("Are u sure u want to Delete", MsgBoxStyle.Question + vbYesNo) = vbYes Then
             Try
                 conn.Open()
                 cmd = New SqlCommand("DELETE FROM product WHERE product_no=@product_no", conn)
